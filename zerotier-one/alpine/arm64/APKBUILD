@@ -1,0 +1,20 @@
+# Contributor: Your Name <your.email@example.com>
+# Maintainer: Your Name <your.email@example.com>
+pkgname=zerotier-one
+pkgver=1.14.0
+pkgrel=0
+pkgdesc="ZeroTier One"
+url="https://www.zerotier.com/"
+arch="arm64"
+license="BSL-1.0"
+depends=""
+makedepends=""
+source=""
+builddir="$srcdir"
+options="!check"
+
+package() {
+    install -Dm755 "$srcdir/usr/sbin/zerotier-one" "$pkgdir/usr/sbin/zerotier-one"
+}
+
+sha512sums=""
